@@ -18,10 +18,10 @@ void print_entry(unsigned long int e_entry, unsigned char *e_ident);
 void close_elf(int elf);
 
 /**
- * check_elf - Verifies if a file is an ELF file.
+ * check_elf - Checks if a file is an ELF file.
  * @e_ident: A pointer to an array containing the ELF magic numbers.
  *
- * Description: Exits with code 98 if the file is not an ELF file.
+ * Description: If the file is not an ELF file - exit code 98.
  */
 void check_elf(unsigned char *e_ident)
 {
@@ -64,11 +64,11 @@ void print_magic(unsigned char *e_ident)
 }
 
 /**
- * print_magic - Prints the magic numbers of an ELF header.
- * @e_ident: A pointer to an array containing the ELF magic numbers.
- *
- * Description: Magic numbers are separated by spaces.
+ * print_class - Prints the class of an ELF header.
+ * @e_ident: A pointer to an array containing the ELF class.
  */
+void print_class(unsigned char *e_ident)
+{
 	printf(" Class: ");
 
 	switch (e_ident[EI_CLASS])
@@ -313,5 +313,5 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 	return (0);
 }
 /*
- * john mbithi Mutave
- */
+*John Mbithi Mutave
+*/
