@@ -29,4 +29,4 @@ A typical Makefile consists of rules and dependencies. Each rule specifies a tar
 - A [README.md]() file, at the root of the folder of the project, is mandatory
 
 ## Author
-**Brian Achieng**
+## John Mbithi Jellyjones-pixel 
